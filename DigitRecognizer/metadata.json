@@ -1,0 +1,8 @@
+{
+  "name": "MNIST Handwritten Digit Recognition with SVM",
+  "description": "Machine learning workbench for MNIST handwritten digit recognition using Support Vector Machines (SVM) in Python and interactive browser inference.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
