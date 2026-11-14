@@ -2,7 +2,7 @@
 
 A high-performance, client-side web application that recognizes handwritten digits and multi-digit numbers directly in the browser. Powered by two distinct machine learning models trained on the **MNIST dataset** with zero backend requirements.
 
-[Digit Recognizer Banner]([public/pwa-512x512.png](https://github.com/REDDYSURYA123/digit-recognizer-svm-cnn/blob/main/public/pwa-512x512.png))
+![Digit Recognizer Banner](./public/pwa-512x512.png)(https://github.com/REDDYSURYA123/digit-recognizer-svm-cnn/blob/main/public/pwa-512x512.png))
 
 ---
 
