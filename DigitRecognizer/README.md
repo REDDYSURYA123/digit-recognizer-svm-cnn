@@ -1,9 +1,8 @@
-# Digit Recognizer (SVM vs CNN)
+# Digit Recognizer (SVM vs CNN)            [https://bit.ly/4kRVinV]
 
-A high-performance, client-side web application that recognizes handwritten digits and multi-digit numbers (**0–100**) directly in the browser. Powered by two distinct machine learning models trained on the **MNIST dataset** with zero backend requirements.
+A high-performance, client-side web application that recognizes handwritten digits and multi-digit numbers directly in the browser. Powered by two distinct machine learning models trained on the **MNIST dataset** with zero backend requirements.
 
-
-[https://bit.ly/4kRVinV]
+[Digit Recognizer Banner]([public/pwa-512x512.png](https://github.com/REDDYSURYA123/digit-recognizer-svm-cnn/blob/main/public/pwa-512x512.png))
 
 ---
 
@@ -31,5 +30,5 @@ A high-performance, client-side web application that recognizes handwritten digi
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/digit-recognizer-svm-cnn.git](https://github.com/YOUR_USERNAME/digit-recognizer-svm-cnn.git)
+   git clone [https://github.com/REDDYSURYA123/digit-recognizer-svm-cnn.git](https://github.com/REDDYSURYA123/digit-recognizer-svm-cnn.git)
    cd digit-recognizer-svm-cnn
