@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Digit Recognizer (SVM vs CNN)
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/fe4c6c2c-beb3-4550-b9e5-7588a8304c31
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+A high-performance, client-side web application that recognizes handwritten digits and multi-digit numbers (**0–100**) directly in the browser. Powered by two distinct machine learning models trained on the **MNIST dataset** with zero backend requirements.
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+[https://bit.ly/4kRVinV]
+
+---
+
+## 🚀 Key Features
+
+* **Dual Model Architecture**:
+  * **Model 1 (SVM)**: Plain-JavaScript One-vs-Rest Support Vector Machine (using Platt's Simplified SMO algorithm) running inside a non-blocking Web Worker with optional 784→50 PCA dimensionality reduction.
+  * **Model 2 (CNN)**: Deep Convolutional Neural Network built with **TensorFlow.js** (`Conv2D → MaxPool → Conv2D → MaxPool → Dropout → Dense`), training live with per-epoch loss and accuracy curves.
+* **Multi-Digit Number Recognition (0–100)**: Draw numbers on a responsive 560×280 canvas. The app segments connected components, orders digits left-to-right, applies LeCun center-of-mass preprocessing, and classifies them.
+* **Ensemble Mode**: Combine SVM decision scores and CNN probabilities for enhanced overall accuracy.
+* **Accuracy-Guarded Feedback Loop**: Correct misclassifications on the fly. The app securely retrains models locally (capped at 10% augmentation) with a strict $\ge 90\%$ accuracy safeguard and automatic rollback.
+* **Progressive Web App (PWA)**: Fully responsive layout for mobile and desktop, working entirely offline after the first load.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend**: React, Tailwind CSS, TypeScript, Vite, Lucide Icons
+* **Machine Learning**: Vanilla JavaScript SMO SVM (Custom Web Worker), TensorFlow.js 4.22.0
+* **Storage**: IndexedDB (for CNN weights and model snapshots), localStorage (for hyperparameters and settings)
+
+---
+
+## 📦 Project Setup & Local Development
+
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/digit-recognizer-svm-cnn.git](https://github.com/YOUR_USERNAME/digit-recognizer-svm-cnn.git)
+   cd digit-recognizer-svm-cnn
